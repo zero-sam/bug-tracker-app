@@ -25,30 +25,62 @@ Backend:
     MongoDB (Mongoose) for database
     CORS and body-parser
 
+DEFAULT CREDENTIALS:
+TO LOGIN AS USER:
+```bash
+username:user
+password:user123
+```
+
+TO LOGIN AS ADMIN:
+```bash
+username:admin
+password:password123
+```
+
+SCREENSHOTS:
+LOGIN PAGE:
+![login](https://github.com/user-attachments/assets/241c04ed-ff97-4939-9448-f23092fbac80)
+
+
+USER DASHBOARD PAGE:
+![newuser](https://github.com/user-attachments/assets/12b70c44-ab2f-48fa-a4bc-f48b41a7f6b3)
+
+ADMIN DASHBOARD:
+![admin1](https://github.com/user-attachments/assets/06b124a6-751d-49ed-8f5a-ef53eebe85d3)
+
+
+
 💻 Setup Instructions
 🏗️ Clone the repo
-
-git clone https://github.com/yourusername/bug-tracker.git
+```bash
+git clone https://github.com/zero-sam/bug-tracker.app
 cd bug-tracker
-
+```
 🔧 Install dependencies
 
 # Backend setup
+```bash
 cd backend
 npm install
+```
 
 # Frontend setup
+```bash
 cd ../frontend
 npm install
-
+```
 🚀 Run the app
 
 # Backend
+```bash
 cd backend
-npm start
+node server
+```
 
 # Frontend
+```bash
 cd ../frontend
 npm start
-
+```
 The frontend will run on localhost:3000 and the backend on localhost:5000.
