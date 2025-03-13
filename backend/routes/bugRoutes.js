@@ -15,13 +15,15 @@ router.get("/", async (req, res) => {
 
 // POST a new bug
 router.post("/", async (req, res) => {
-  const { title, description } = req.body;
+  const { title, description, cve, severity } = req.body;
 
   try {
     const newBug = new Bug({
       title,
       description,
-      status: "Open", // Default status when created
+      cve,
+      severity,
+      status: "Open",
     });
 
     const bug = await newBug.save();
@@ -31,6 +33,7 @@ router.post("/", async (req, res) => {
     res.status(500).send("Server Error");
   }
 });
+
 
 // DELETE a bug
 router.delete("/:id", async (req, res) => {

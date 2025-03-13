@@ -1,11 +1,12 @@
 const mongoose = require("mongoose");
 
-const bugSchema = new mongoose.Schema({
-  title: String,
-  description: String,
-  status: { type: String, default: "Open" }, // New status field
+const BugSchema = new mongoose.Schema({
+  title: { type: String, required: true },
+  description: { type: String, required: true },
+  status: { type: String, default: "Open" },
+  cve: { type: String, required: true },
+  severity: { type: String, default: "Low" },
+  date: { type: Date, default: Date.now },
 });
 
-const Bug = mongoose.model("Bug", bugSchema);
-
-module.exports = Bug;
+module.exports = mongoose.model("Bug", BugSchema);
