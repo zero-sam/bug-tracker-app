@@ -1,15 +1,15 @@
 # bug-tracker-app
  A full-stack bug tracker app built with React and Node.js
-🐞 Bug Tracker App
-🚀 Overview
+ Bug Tracker App
+ Overview
 
 This is a full-stack Bug Tracker app built to help manage and track software bugs efficiently. It allows users to report bugs, update their status, and delete resolved issues.
 🔧 Features
 
-    📝 Report Bugs: Add new bugs with a title and description.
-    ✅ Update Status: Mark bugs as "Closed" or "Reopen" them.
-    🗑️ Delete Bugs: Remove bugs from the list once they’re resolved.
-    👨‍💻 Admin/User Roles: Admin gets access to the dashboard; users can report bugs only.
+     Report Bugs: Add new bugs with a title and description.
+     Update Status: Mark bugs as "Closed" or "Reopen" them.
+     Delete Bugs: Remove bugs from the list once they’re resolved.
+     Admin/User Roles: Admin gets access to the dashboard; users can report bugs only.
 
 🛠️ Tech Stack
 
@@ -51,13 +51,13 @@ ADMIN DASHBOARD:
 
 
 
-💻 Setup Instructions
-🏗️ Clone the repo
+ Setup Instructions
+ Clone the repo
 ```bash
 git clone https://github.com/zero-sam/bug-tracker.app
 cd bug-tracker
 ```
-🔧 Install dependencies
+ Install dependencies
 
 # Backend setup
 ```bash
@@ -70,7 +70,7 @@ npm install
 cd ../frontend
 npm install
 ```
-🚀 Run the app
+ Run the app
 
 # Backend
 ```bash
